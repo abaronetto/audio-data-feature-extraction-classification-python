@@ -1,13 +1,8 @@
 import copy
 import os
-import sys
-from pathlib import Path
 
 import pandas as pd
 import torch.nn
-
-path = Path(os.getcwd())
-sys.path.append(os.getcwd() + '/../')
 
 import numpy as np
 
