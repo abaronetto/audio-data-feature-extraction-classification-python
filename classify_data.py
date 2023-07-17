@@ -9,9 +9,12 @@ import torch.nn
 path = Path(os.getcwd())
 sys.path.append(os.getcwd() + '/../')
 
-from Utils.file_manage import save_json
 import numpy as np
 
+def save_json(data,fn: str):
+    import json
+    with open(fn, 'w') as f:
+        json.dump(data, f, indent=4)
 
 def resample(X, y, method='random'):
     import six
